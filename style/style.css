@@ -31,7 +31,9 @@ p, h1, h2, h3,h4{
     --max-width: 1920px;
     --max-widt-container:1146px;
 }
-
+html{
+    overflow-x: hidden;
+}
 body{
     overflow-x: hidden;
     font-family: "magistral", sans-serif;
