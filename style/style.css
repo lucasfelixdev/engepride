@@ -416,7 +416,7 @@ header h1{
 }
 
 .inputs_calculadora{display: flex; flex-direction: column; gap: 18px; width: 90%; max-width: 456px;}
-.inputs_calculadora input{
+.inputs_calculadora input, select{
     box-sizing: border-box;
     padding: 0 25px;
     color: #999;
@@ -433,6 +433,10 @@ header h1{
     height: 63px;
     border-radius: 10px;
     background: #D9D9D9;
+}
+
+select option{
+    font-size: 18px;
 }
 
 
@@ -998,7 +1002,7 @@ header h1{
 
 @media (max-width: 715px) {
     .s-eletrico__car-img{margin-bottom: -20%;}
-    .s-eletrico__infos{padding: 10% 0;}
+    .s-eletrico__infos{padding: 10% 0; border-radius: 25px;}
 }
 .s-eletrico__infos__title {
     display: flex;
