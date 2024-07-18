@@ -98,14 +98,43 @@
                                         <div class="inputs_calculadora">
                                             <input type="text" placeholder="WhatsApp">
                                             <input type="email" placeholder="Email">
-                                            <input type="text" placeholder="Estado">
-                                            <input type="text" placeholder="Valor de sua conta de luz">
+                                            <select class="options" name="estado" id="estado" required>
+                                                <option value="" disabled selected>ESTADO</option>
+                                                <option value="AC" >Acre</option>
+                                                <option value="AL" >Alagoas</option>
+                                                <option value="AP" >Amapá</option>
+                                                <option value="AM" >Amazonas</option>
+                                                <option value="BA" >Bahia</option>
+                                                <option value="CE" >Ceará</option>
+                                                <option value="DF" >Distrito Federal</option>
+                                                <option value="ES" >Espírito Santo</option>
+                                                <option value="GO" >Goiás</option>
+                                                <option value="MA" >Maranhão</option>
+                                                <option value="MT" >Mato Grosso</option>
+                                                <option value="MS" >Mato Grosso do Sul</option>
+                                                <option value="MG" >Minas Gerais</option>
+                                                <option value="PA" >Pará</option>
+                                                <option value="PB" >Paraíba</option>
+                                                <option value="PR" >Paraná</option>
+                                                <option value="PE" >Pernambuco</option>
+                                                <option value="PI" >Piauí</option>
+                                                <option value="RJ" >Rio de Janeiro</option>
+                                                <option value="RN" >Rio Grande do Norte</option>
+                                                <option value="RS" >Rio Grande do Sul</option>
+                                                <option value="RO" >Rondônia</option>
+                                                <option value="RR" >Roraima</option>
+                                                <option value="SC" >Santa Catarina</option>
+                                                <option value="SP" >São Paulo</option>
+                                                <option value="SE" >Sergipe</option>
+                                                <option value="TO" >Tocantins</option>
+                                            </select>
+                                            <input type="text" name="conta" id="conta" placeholder="Valor de sua conta de luz">
                                         </div>
                                         <div class="result__camp">
                                             <div class="infos first"><h3>Irradiação considerada</h3><p>5,149 kW/m² x dia</p></div>
                                             <div class="infos"><h3>Irradiação considerada</h3><p>5,149 kW/m² x dia</p></div>
                                             <div class="infos"><h3>Irradiação considerada</h3><p>5,149 kW/m² x dia</p></div>
-                                            <div class="valor_final"><h3>Valor estimado</h3><h3>R$ R$ 25.909,21</h3></div>
+                                            <div class="valor_final"><h3>Valor estimado</h3><h3 id="resultado">0</h3></div>
                                         </div>
                                         <div class="garantias">
                                             <img src="./static/image/garantias.png" alt="">
@@ -212,5 +241,53 @@
             </div>
         </section>
     </main>
+    <script>
+// Dados específicos para cada estado
+const dadosEstados = {
+    MA: { irrad: 4.644, tarifa: 0.61, custoWp: 5.00 }, // Exemplo para Maranhão
+    AC: { irrad: 4.9, tarifa: 0.70, custoWp: 4.50 }, // Exemplo para Acre
+    AL: { irrad: 5.2, tarifa: 0.65, custoWp: 4.75 }, // Exemplo para Alagoas
+    // Adicione outros estados conforme necessário
+};
+
+// Função para atualizar os dados
+function atualizarDados() {
+    const estado = document.getElementById('estado').value;
+    const valorConta = parseFloat(document.getElementById('conta').value);
+
+    const resultadoElement = document.getElementById('resultado');
+
+    // Verificar se o estado e o valor da conta são válidos
+    if (estado && !isNaN(valorConta) && valorConta > 0) {
+        const dados = dadosEstados[estado];
+
+        if (dados) {
+            // Calcular a potência necessária e o custo total do projeto
+            const diasMes = 30;
+            const consumoKwh = valorConta / dados.tarifa; // Consumo em kWh
+            const potenciaKw = consumoKwh / (dados.irrad * 0.75 * diasMes); // Potência em kW pico
+            const potenciaWp = potenciaKw * 1000; // Potência em Wp
+            const custoProjeto = potenciaWp * dados.custoWp; // Custo do projeto em R$
+
+            // Exibir o resultado
+            resultadoElement.textContent = `R$ ${custoProjeto.toFixed(2)}`;
+        } else {
+            resultadoElement.textContent = 'Dados do estado não encontrados.';
+        }
+    } else {
+        // Limpar resultado se entrada for inválida
+        resultadoElement.textContent = 'R$ 0,00';
+    }
+}
+
+// Adicionar eventos de entrada para recalcular ao vivo
+document.getElementById('estado').addEventListener('change', atualizarDados);
+document.getElementById('conta').addEventListener('input', atualizarDados);
+
+// Inicializar com os valores padrão
+atualizarDados();
+
+
+    </script>
 </body>
 </html>
