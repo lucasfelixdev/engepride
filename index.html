@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./svg/icon-squad-lucas_1.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://use.typekit.net/cwo6woz.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
     <title>Engepride | Página inicial</title>
+    <style>
+    </style>
 </head>
-<body>
+<body id="cursor">
     <header style="background-size: cover;
         background-repeat: no-repeat;">
         <div class="container__header">
@@ -43,7 +46,6 @@
                     </div>
             </div>
         </section>
-
         <section class="solar__div">
             <div class="s-solar">
                         <div class="solar__container">
@@ -150,9 +152,6 @@
                         
                     </div>
         </section>
-
-        
-
         <section class="s-infraestrutura">
             <div class="s-infra__header"></div>
             <div class="s-infra__texts__header">
@@ -186,7 +185,6 @@
                 </div>
             </div>
         </section>
-
         <section class="infraestrutura__2">
             <h1>E muito mais!</h1>
             <div class="extra__infos">
@@ -234,22 +232,138 @@
                     <img src="./static/image/car-eletric-cropped.png" alt="">
                 </div>
                 <div class="s-eletrico__infos">
-                    <div class="s-eletrico__infos__title"><h1>QUALIDA DE  PRODUTO & PARA NOSSOS CLIENTES</h1></div>
+                    <div class="s-eletrico__infos__title"><h1>QUALIDA DE  PRODUTO &<br>SERVIÇOS PARA NOSSOS CLIENTES</h1></div>
                     <div class="line-eletric-cars"></div>
                     <div class="s-eletrico__infos__box"><p>Manutenção</p><p>Testes</p><p>Comissionamento</p></div>
                 </div>
             </div>
         </section>
-    </main>
-    <script>
-// Dados específicos para cada estado
-const dadosEstados = {
-    MA: { irrad: 4.644, tarifa: 0.61, custoWp: 5.00 }, // Exemplo para Maranhão
-    AC: { irrad: 4.9, tarifa: 0.70, custoWp: 4.50 }, // Exemplo para Acre
-    AL: { irrad: 5.2, tarifa: 0.65, custoWp: 4.75 }, // Exemplo para Alagoas
-    // Adicione outros estados conforme necessário
-};
+        <section class="s-slider_comments">
+            <div class="header__comments">
 
+            </div>
+            <div class="container-slider">
+                <button id="prev-button"><img src="/static/icons/slider/arrow-right.svg" alt="prev-button"></button>
+                <div class="container-images">
+                  <img src="./static/image/s-service-infra.png" alt="girl" class="slider on">
+                  <img src="./static/image/s-service-solar.png" alt="girl" class="slider">
+                  <img src="./static/image/s-service-eletric_car.png" alt="girl" class="slider">
+                </div>
+                <button id="next-button"><img src="/static/icons/slider/arrow-right.svg" alt="next-button"></button>
+              </div>
+        </section>
+
+        <section class="s-parceiros">
+            <h1>Nossos <span>Parceiros</span></h1>
+            <div class="wrapper">
+                <div class="itemLeft item1"><img src="./static/icons/parceiros/1absolar.jpg" alt=""></div>
+                <div class="itemLeft item2"><img src="./static/icons/parceiros/2Jinko.jpg" alt=""></div>
+                <div class="itemLeft item3"><img src="./static/icons/parceiros/3Weg.jpg" alt=""></div>
+                <div class="itemLeft item4"><img src="./static/icons/parceiros/4ABGD.png" alt=""></div>
+                <div class="itemLeft item5"><img src="./static/icons/parceiros/CREA SP.png" alt=""></div>
+                <div class="itemLeft item6"><img src="./static/icons/parceiros/1absolar.jpg" alt=""></div>
+                <div class="itemLeft item7"><img src="./static/icons/parceiros/BYD.png" alt=""></div>
+                <div class="itemLeft item8"><img src="./static/icons/parceiros/CANADIAN.png" alt=""></div>
+              </div>
+              <div class="wrapper">
+                <div class="itemRight item1"><img src="./static/icons/parceiros/CREA SP.png" alt=""></div>
+                <div class="itemRight item2"><img src="./static/icons/parceiros/Growatt.png" alt=""></div>
+                <div class="itemRight item3"><img src="./static/icons/parceiros/1absolar.jpg" alt=""></div>
+                <div class="itemRight item4"><img src="./static/icons/parceiros/2Jinko.jpg" alt=""></div>
+                <div class="itemRight item5"><img src="./static/icons/parceiros/BYD.png" alt=""></div>
+                <div class="itemRight item6"><img src="./static/icons/parceiros/4ABGD.png" alt=""></div>
+                <div class="itemRight item7"><img src="./static/icons/parceiros/5ANEEL.svg" alt=""></div>
+                <div class="itemRight item8"><img src="./static/icons/parceiros/3Weg.jpg" alt=""></div>
+              </div>
+        </section>
+        <div class="arrow-faq" style="width: 100%; display: flex; justify-content: center; margin:15% 0 0 0;">
+            <img src="./static/icons/arrow-down-faq.svg" alt="">
+        </div>
+        <section class="s-faq">
+            <img src="./static/icons/" alt="" srcset="">
+            <h2><span>Dúvidas frequente sobre como economizar</span><br> com um sistema de energia solar?</h2>
+
+            <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <symbol viewBox="0 0 24 24" id="expand-more">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+                </symbol>
+                <symbol viewBox="0 0 24 24" id="close">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+                </symbol>
+            </svg>
+            </div>
+
+            <details open>
+            <summary>
+                O que é a homologação de um projeto?
+                <svg class="control-icon control-icon-expand" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+                <svg class="control-icon control-icon-close" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            </summary>
+            <p>A homologação consiste em um procedimento obrigatório para a geração de energia e eventualmente sua conexão com a rede da distribuidora local. <br><br> Sua realização depende de um projeto elaborado por um engenheiro eletricista, além de um cadastro da quantidade de energia que se pretende gerar. <br><br>De modo geral, é composta pela etapa de aprovação técnica e comercial, emissão do parecer de acesso do cliente, instalação da usina, vistoria e por fim, com a aprovação da distribuidora, sua conexão na rede de distribuição.</p>
+            </details>
+
+            <details>
+
+            <summary>
+                O que é preciso para instalação de paineis fotovoltaicos?
+                <svg class="control-icon control-icon-expand" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+                <svg class="control-icon control-icon-close" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+            </summary>
+            <p>Basicamente, é necessário ter em mãos uma conta de luz, que será usada para sabermos seu consumo anual, tarifa e modalidade de contratação de energia. <br><br> Detalhes como o tipo de telhado, infraestrutura e irradiação solar serão analisados durante a vistoria técnica</p>
+            </details>
+
+            <details>
+                <summary>
+                    Por que devo providenciar um projeto e infraestrutura<br> dedicados para meu carregador de carro elétrico?     
+                    <svg class="control-icon control-icon-expand" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+                    <svg class="control-icon control-icon-close" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+                </summary>
+                <p>Conforme previsto na norma ABNT NBR 17019, os carregadores veiculares devem possuir uma infraestrutura dedicada, com proteções específicas, como disjuntor dedicado, DR e DPS, além de um aterramento adequado. <br><br>Estas medidas visam a segurança durante o carregamento e a durabilidade da instalação e do veículo elétrico.</p>
+            </details>
+
+            <details>
+                <summary>
+                    O que um projeto elétrico contempla?     
+                    <svg class="control-icon control-icon-expand" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+                    <svg class="control-icon control-icon-close" width="40" height="40" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+                </summary>
+                <p>Para quem está construindo ou passando por uma reforma, modernização ou retrofit, a contratação de um projeto elétrico de infraestrutura envolve a elaboração de todos os documentos técnicos necessários para sua execução, como:  <br>diagramas, layouts, tabelas de carga e fator de demanda, projeto do padrão de entrada de energia, sistema de proteção contra descarga atmosférica, entre outros detalhes exigidos por norma (ABNT NBR 5410, 5419, 61439, entre outras).</p>
+            </details>
+        </section>
+        <section class="s-last_callAction">
+            <div class="callAction_container">
+                    <div class="callAction_container__texts ">
+                        <h1>Ainda com dúvidas?</h1>
+                        Fale com um de nossos consultores
+                    </div>
+                    <div class="action_btn">
+                        <a class="black_btn" href="">
+                            falar com um engenheiro
+                            <img src="./static/svg/arrow-right.svg" alt="seta apontando para direita">
+                        </a>
+                    </div>
+            </div>
+        </section>
+        <section class="s-pre__footer">
+            <h2 class="pre-footer-tx1">
+               <span>A melhor 
+                <br>escolha</span>
+                <br>para o seu
+                <br>negócio</h2>
+                <h2 class="pre-footer-tx2">
+                    <br>Entre em contato 
+                    <br>com a nossa equipe 
+                    <br><span>e invista no que <br>realmente Importa!</span>
+                </h2>
+
+            <img src="./static/image/engenheiro.png" alt="">
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="./static/script/script.js"></script>
+    <script type="text/javascript">
 // Função para atualizar os dados
 function atualizarDados() {
     const estado = document.getElementById('estado').value;
