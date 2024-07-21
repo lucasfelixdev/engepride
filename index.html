@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./svg/icon-squad-lucas_1.svg" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://use.typekit.net/cwo6woz.css">
     <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
@@ -30,13 +31,13 @@
                         <h2>Nossas áreas de <span style="color: #7A1FFB; font-weight: 700;">atuação.</span></h2>
                     </div>
                     <div class="s-servicos__box">
-                        <div class="box">
+                        <div class="box box-reveal-top1">
                             <p>ENERGIA</br><span style="font-weight: 500;">SOLAR</span></p>
                         </div>
-                        <div class="box">
+                        <div class="box box-reveal-top2">
                             <p>ENGENHARIA &</br><span style="font-weight: 500;">INFRAESTRUTURA</span></p>
                         </div>
-                        <div class="box">
+                        <div class="box box-reveal-top3">
                             <p>CARREGADOR</br><span style="font-weight: 500;">CARRO ELÉTRICO</span></p>
                         </div>
                     </div>
@@ -49,21 +50,21 @@
         <section class="solar__div">
             <div class="s-solar">
                         <div class="solar__container">
-                            <div class="energia_solar_logo-s"><img src="./static/svg/energia solar.svg" alt="logo energia solar"></div>
+                            <div class="energia_solar_logo-s"><img class="solar-reveal-logo" src="./static/svg/energia solar.svg" alt="logo energia solar"></div>
     
                             <div class="s-solar__infos__vantagens">
-                                <h2>Por que investir<br/><span style="font-weight: bold;">em energia solar?</span></h2>
+                                <h2 class="solar-reveal-titles01">Por que investir<br/><span style="font-weight: bold;">em energia solar?</span></h2>
     
                                 
                                 <div class="solar__infos">
                                     <div class="line1"></div>
-                                    <div class="s-solar__vantagens">
+                                    <div class="s-solar__vantagens solar-reveal-titles02">
                                         <h2>95%</h2>
                                         <h4>de desconto</h4>
                                         <p>Livre-se das contas de energia por prazo indeterminado.</p>
                                     </div>
     
-                                    <div class="s-solar__vantagens">
+                                    <div class="s-solar__vantagens solar-reveal-titles03">
                                         <h2>25</h2>
                                         <h4>anos de garantia</h4>
                                         <p>Garantia de 25 anos no desempenho com eficiencia.</p>
@@ -155,7 +156,7 @@
         <section class="s-infraestrutura">
             <div class="s-infra__header"></div>
             <div class="s-infra__texts__header">
-                    <h1>Engenharia &<br> <span>Infraestrutura</span></h1>
+                    <h1 class="infra__title">Engenharia &<br> <span>Infraestrutura</span></h1>
                     <div class="p__infra__text_container">
                         <p>
                             Projetamos a instalação elétrica completa do seu empreendimento, cobrindo desde os alimentadores iniciais até a distribuição de pontos de tomada e carga por circuito.
@@ -170,14 +171,14 @@
             <div class="especialidades">
                 <div class="form__container">
                     <div class="itens">
-                        <p>Layout e distribuição de infraesterutura elétrica</p>
-                        <p>Diagramas unifilares e trifilares</p>
-                        <p>Padrão de entrada de energia</p>
-                        <p>SPDA - Proteção contra descarga atmosférica</p>
-                        <p>Condutores e condutos</p>
-                        <p>Distribuição de pontos de iluminação e tomadas</p>
-                        <p>Encaminhamentos e layout</p>
-                        <p>AsBuilt de projetos existentes</p>
+                        <p class="reveal-especialidade01">Layout e distribuição de infraesterutura elétrica</p>
+                        <p class="reveal-especialidade02">Diagramas unifilares e trifilares</p>
+                        <p class="reveal-especialidade03">Padrão de entrada de energia</p>
+                        <p class="reveal-especialidade04">SPDA - Proteção contra descarga atmosférica</p>
+                        <p class="reveal-especialidade05">Condutores e condutos</p>
+                        <p class="reveal-especialidade06">Distribuição de pontos de iluminação e tomadas</p>
+                        <p class="reveal-especialidade07">Encaminhamentos e layout</p>
+                        <p class="reveal-especialidade08">AsBuilt de projetos existentes</p>
                     </div>
                     <div class="form">
                         <img src="./static/svg/border.svg" alt="">
@@ -189,8 +190,8 @@
             <h1>E muito mais!</h1>
             <div class="extra__infos">
                 <div class="infos__infra__extras">
-                    <img class="construtor_obj" src="./static/image/icon-infra-contrutor01.png" alt="">
-                    <img class="planta_obj" src="./static/image/icon-infra-planta.png" alt="">
+                    <img class="construtor_obj reveal-especialidade01" src="./static/image/icon-infra-contrutor01.png" alt="">
+                    <img class="planta_obj reveal-especialidade02" src="./static/image/icon-infra-planta.png" alt="">
                     <ul>
                         <li>Toda a documentação técnica para aprovação e execução do projeto</li>
 
@@ -211,30 +212,30 @@
         <section class="s-carro_eletrico">
             <div class="carEletrico_container">
                 <img src="./static/icons/seta-down-white.svg" alt="">
-                <h1>Carregadores de<br>
+                <h1 class="infra__title">Carregadores de<br>
                 <span>Carros elétricos</span></h1>
-                <p>Fazemos o projeto do seu carregador e acordo com sua necessidade e de seu carro elétrica, garantindo um carregamento rápido e seguro. Trabalhamos com as melhores fabricantes do mercado, com produtos certificados e testados.</p>
+                <p class="bottom-title">Fazemos o projeto do seu carregador e acordo com sua necessidade e de seu carro elétrica, garantindo um carregamento rápido e seguro. Trabalhamos com as melhores fabricantes do mercado, com produtos certificados e testados.</p>
                 <img src="./static/image/eletric-car.png" alt="">
             </div>
             <div class="car-eletric-text2">
-                <h2>A <span>ENGEPRIDE</span> realiza todos<br>  os
+                <h2 class="reveal-especialidade01">A <span>ENGEPRIDE</span> realiza todos<br>  os
                     processos de projetos e infraestrutura </h2>
 
-                <div class="car-eletrico-line"></div>
+                <div class="car-eletrico-line solar-reveal-logo"></div>
 
-                <h2>E possui os <span>melhores fornecedores</span>
+                <h2 class="reveal-especialidade02">E possui os <span>melhores fornecedores</span>
                     <br>de carregadores para veículos <br>
                     elétricos do mercado </h2>
 
             </div>
             <div class="s-eletrico-footer">
-                <div class="s-eletrico__car-img">
+                <div class="s-eletrico__car-img reveal-car">
                     <img src="./static/image/car-eletric-cropped.png" alt="">
                 </div>
                 <div class="s-eletrico__infos">
                     <div class="s-eletrico__infos__title"><h1>QUALIDA DE  PRODUTO &<br>SERVIÇOS PARA NOSSOS CLIENTES</h1></div>
                     <div class="line-eletric-cars"></div>
-                    <div class="s-eletrico__infos__box"><p>Manutenção</p><p>Testes</p><p>Comissionamento</p></div>
+                    <div class="s-eletrico__infos__box"><p class="box-reveal-top1">Manutenção</p><p class="box-reveal-top2">Testes</p><p class="box-reveal-top3">Comissionamento</p></div>
                 </div>
             </div>
         </section>
@@ -398,44 +399,66 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="./static/script/script.js"></script>
     <script type="text/javascript">
-// Função para atualizar os dados
+       const dadosEstados = {
+    AC: { irrad: 4.644, tarifa: 0.91, custoWp: 3.25 },
+    AL: { irrad: 5.325, tarifa: 0.95, custoWp: 3.25 },
+    AP: { irrad: 4.707, tarifa: 0.92, custoWp: 3.25 },
+    AM: { irrad: 4.5, tarifa: 0.92, custoWp: 3.25 },
+    BA: { irrad: 5.29, tarifa: 0.9, custoWp: 3.25 },
+    CE: { irrad: 5.672, tarifa: 0.79, custoWp: 3.25 },
+    DF: { irrad: 5.43, tarifa: 0.84, custoWp: 3.25 },
+    ES: { irrad: 4.983, tarifa: 0.75, custoWp: 3.25 },
+    GO: { irrad: 5.475, tarifa: 0.78, custoWp: 3.25 },
+    MA: { irrad: 5.216, tarifa: 0.79, custoWp: 3.25 },
+    MT: { irrad: 5.14, tarifa: 0.93, custoWp: 3.25 },
+    MS: { irrad: 5.192, tarifa: 0.96, custoWp: 3.25 },
+    MG: { irrad: 5.195, tarifa: 0.82, custoWp: 3.25 },
+    PA: { irrad: 4.816, tarifa: 1.06, custoWp: 3.25 },
+    PB: { irrad: 5.653, tarifa: 0.66, custoWp: 3.25 },
+    PR: { irrad: 4.977, tarifa: 0.68, custoWp: 3.25 },
+    PE: { irrad: 5.427, tarifa: 0.82, custoWp: 3.25 },
+    PI: { irrad: 5.744, tarifa: 0.94, custoWp: 3.25 },
+    RJ: { irrad: 4.93, tarifa: 1.29, custoWp: 3.25 },
+    RN: { irrad: 5.747, tarifa: 0.82, custoWp: 3.25 },
+    RS: { irrad: 4.749, tarifa: 0.69, custoWp: 3.25 },
+    RO: { irrad: 4.672, tarifa: 0.78, custoWp: 3.25 },
+    RR: { irrad: 4.91, tarifa: 0.73, custoWp: 3.25 },
+    SC: { irrad: 4.535, tarifa: 0.73, custoWp: 3.25 },
+    SP: { irrad: 5.149, tarifa: 0.82, custoWp: 2.85 },
+    SE: { irrad: 5.324, tarifa: 0.84, custoWp: 3.25 },
+    TO: { irrad: 5.284, tarifa: 0.83, custoWp: 3.25 }
+};
+
 function atualizarDados() {
     const estado = document.getElementById('estado').value;
     const valorConta = parseFloat(document.getElementById('conta').value);
 
     const resultadoElement = document.getElementById('resultado');
 
-    // Verificar se o estado e o valor da conta são válidos
     if (estado && !isNaN(valorConta) && valorConta > 0) {
         const dados = dadosEstados[estado];
 
         if (dados) {
-            // Calcular a potência necessária e o custo total do projeto
             const diasMes = 30;
-            const consumoKwh = valorConta / dados.tarifa; // Consumo em kWh
-            const potenciaKw = consumoKwh / (dados.irrad * 0.75 * diasMes); // Potência em kW pico
-            const potenciaWp = potenciaKw * 1000; // Potência em Wp
-            const custoProjeto = potenciaWp * dados.custoWp; // Custo do projeto em R$
+            const consumoKwh = valorConta / dados.tarifa;
+            const potenciaKw = consumoKwh / (dados.irrad * 0.75 * diasMes);
+            const potenciaWp = potenciaKw * 1000;
+            const custoProjeto = potenciaWp * dados.custoWp;
 
-            // Exibir o resultado
-            resultadoElement.textContent = `R$ ${custoProjeto.toFixed(2)}`;
+            const custoFormatado = custoProjeto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            resultadoElement.textContent = custoFormatado;
         } else {
             resultadoElement.textContent = 'Dados do estado não encontrados.';
         }
     } else {
-        // Limpar resultado se entrada for inválida
         resultadoElement.textContent = 'R$ 0,00';
     }
 }
 
-// Adicionar eventos de entrada para recalcular ao vivo
 document.getElementById('estado').addEventListener('change', atualizarDados);
 document.getElementById('conta').addEventListener('input', atualizarDados);
 
-// Inicializar com os valores padrão
 atualizarDados();
-
-
     </script>
 </body>
 </html>
