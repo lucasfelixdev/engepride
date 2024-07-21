@@ -53,6 +53,26 @@ window.revelar = ScrollReveal({reset:false})
 // SERVIÇOES
  const serviceDuration = 800;
  const solarTitlesDuration = 1000;
+
+ 
+
+revelar.reveal('.right-reveal',{
+  duration: serviceDuration,
+  distance: '20px',
+  origin: 'right',
+  easing: 'ease-in-out'
+})
+
+revelar.reveal('.top-reveal',{
+  duration: serviceDuration,
+  distance: '40px',
+  origin: 'bottom',
+  easing: 'ease-in-out', 
+  delay: 500
+})
+
+
+
 revelar.reveal('.box-reveal-top1',{
     duration: serviceDuration,
     distance: '400px',

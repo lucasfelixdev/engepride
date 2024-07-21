@@ -1403,7 +1403,7 @@ select option{
 .callAction_container {
     gap: 25px;
     display: flex;
-    width: 93%;
+    width: 93 %;
     max-width: 690px;
     height: 223px;
     background: #5e17eba3;
@@ -1547,7 +1547,7 @@ footer{
 
 .footer-rodape img{ margin-left: 22px;}
 
-.creditos-footer :nth-child(1), p{font-size: 13px;}
+.creditos-footer :nth-child(1), .creditos-footer p{font-size: 13px;}
 .creditos-footer :nth-child(2){color: #444;}
 
 .creditos-footer{
