@@ -1403,7 +1403,7 @@ select option{
 .callAction_container {
     gap: 25px;
     display: flex;
-    width: 80%;
+    width: 93%;
     max-width: 690px;
     height: 223px;
     background: #5e17eba3;
@@ -1519,6 +1519,7 @@ footer{
     padding: 53px 0 39px 0;
 }
 .infos-social a{
+    width: 85%;
     box-sizing: border-box;
     padding-top: 4px;
     font-family: 'muller';
@@ -1527,7 +1528,7 @@ footer{
     line-height: normal;
     color: white;
     text-decoration: none;
-    width: 361px;
+    max-width: 361px;
     display: flex;
     height: 65px;
     background: var(--purple-1);
