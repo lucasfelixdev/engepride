@@ -193,3 +193,14 @@ revelar.reveal('.reveal-car',{
   easing: 'ease-in-out',
   delay:100
 })
+
+
+var options = {
+  strings: [
+    'Com a <span class="span__header">Engepride</span> Construa o Futuro com <span class="span__header">Soluções</span> Inovadoras em <span class="span__header">Engenharia</span> e Infraestrutura '
+  ],
+  typeSpeed: 50, // velocidade de digitação
+  loop: false // repete a digitação em loop
+};
+
+var typed = new Typed('#typed-output', options);

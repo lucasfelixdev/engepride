@@ -89,6 +89,7 @@ header{
 }
 
 header h1{
+    height: 215px;
     margin: 80px 0;
     color: #FFF;
     text-align: right;
