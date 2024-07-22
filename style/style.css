@@ -262,7 +262,7 @@ header h1{
     padding: 20% 0;
 }
 
-.energia_solar_logo-s img{  height: clamp(7.5em  + 10px, 10.1vw, 17em);}
+.energia_solar_logo-s img{  height: clamp(7.5em  + 10px, 13vw, 17em);}
 .s-solar__infos__vantagens{    
     margin: 0 auto;
     display: flex;
@@ -1403,7 +1403,7 @@ select option{
 .callAction_container {
     gap: 25px;
     display: flex;
-    width: 93 %;
+    width: 90%;
     max-width: 690px;
     height: 223px;
     background: #5e17eba3;
