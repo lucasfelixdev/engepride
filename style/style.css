@@ -24,7 +24,8 @@
 }
 
 
-p, h1, h2, h3,h4{
+p, h1, h2, h3,h4, a{
+    text-decoration: none;
     display: block;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -55,7 +56,8 @@ p, h1, h2, h3,h4{
 }
 
 body{
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     font-family: "magistral", sans-serif;
     font-style: normal;
@@ -111,17 +113,19 @@ header h1{
     text-align: center;
 }
 
+
+
 .btn-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 233px;
     cursor: pointer;
     margin: 20px;
     height: 45px;
     border: none;
     background-size: 300% 100%;
-
-
     color: #FFF;
-  
     font-family: Magistral;
     font-size: 22px;
     font-style: normal;
@@ -747,13 +751,13 @@ select option{
 }
 
 
-.infraestrutura__2{height: 100%; width: 100%; margin-top: 5%;}
-@media (max-height: 720px) {
-    .infraestrutura__2{height: 100%; width: 100%; margin-top: 25%;}
-    .s-infraestrutura {height: 265vh;}}
+.infraestrutura__2{height: 100%; width: 100%; margin-top: 60%;}
+@media (min-width: 1958px) {
+    .infraestrutura__2{margin-top: 2%;}
+    .s-infraestrutura {height: 230vh;}}
 @media (max-width: 630px) {
-    .infraestrutura__2{height: 100%; width: 100%; margin-top: 17%;}
-.s-infraestrutura {height: 255vh;}}
+    .infraestrutura__2{height: 100%; width: 100%; margin-top: 2%;}
+.s-infraestrutura {height: 225vh;}}
 .infraestrutura__2 h1{
     margin: 0 auto;
     width: 80%;
@@ -1082,7 +1086,7 @@ select option{
 
 .s-slider_comments{
     overflow-y: hidden;
-    display: flex;
+    display: none;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -1193,7 +1197,7 @@ select option{
 
 /* Slider parceiros */
 .wrapper {
-    margin-top: 1rem;
+    margin-top: 3rem;
     width: 90%;
     max-width: 1536px;
     margin-inline: auto;
@@ -1477,14 +1481,15 @@ select option{
 }
 
 .s-map{
+    background-position: center;
     margin: 0 auto;
     margin-top: -5px;
     z-index: 0;
     position: relative;
-    width: 100%;
+    width: 125%;
     max-width: 1920px;
     height: 506px;
-    background-image: url(../static/image/s-map.png);
+    background-image: url(../static/image/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1509,16 +1514,16 @@ footer{
 }
 
 .info-contatos_numbers{
-    margin-top: 80px;
-}
-
-.infos-social{
+    margin-top: 80px;}
+.infos-social{width: 300px;
+    display: flex;
     height: 100%;
-}
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;}
 .infos-social img{
-    padding: 53px 0 39px 0;
-}
-.infos-social a{
+    padding: 53px 0 39px 0;}
+.infos-social :nth-child(3){
     width: 85%;
     box-sizing: border-box;
     padding-top: 4px;
@@ -1534,35 +1539,24 @@ footer{
     background: var(--purple-1);
     border-radius: 10px;
     justify-content: center;
-    align-items: center;
-}
-
+    align-items: center;}
 .footer-rodape{
     margin:0 auto;
     width: 80%;
     max-width: 950px;
     display: flex;
-    align-items: center;
-}
-
+    align-items: center;}
 .footer-rodape img{ margin-left: 22px;}
-
 .creditos-footer :nth-child(1), .creditos-footer p{font-size: 13px;}
 .creditos-footer :nth-child(2){color: #444;}
-
 .creditos-footer{
     margin:0 auto;
     width: 80%;
     max-width: 950px;
-    padding: 15px 0 75px 0;
-}
-
+    padding: 15px 0 75px 0;}
 @media(max-width: 600px){
     .footer-infos{flex-direction: column;row-gap: 95px;}
-
 }
-
-
 .box-reveal-top1, .box-reveal-top2, 
 .box-reveal-top3, .solar-reveal-logo,
 .solar-reveal-titles01, .solar-reveal-titles02,
@@ -1571,3 +1565,41 @@ footer{
 .reveal-especialidade06,.reveal-especialidade07,
 .reveal-especialidade08,.bottom-title
 {visibility: hidden;}
+
+.quem-somos{width:100%; height: 100vh; display: flex; justify-content: center; align-items: center;}
+.quem-somos__container{ width: 85%; max-width: 1400px; height: 100%; display: flex; justify-content: center; align-items: center; gap: 65px; flex-wrap: wrap;}
+.container__texts{width: 50%;}
+.titles_about h1{
+    margin-bottom: -7px;
+    color: #000;
+    font-family: Magistral;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+    .titles_about h2{
+       
+        color: #000;
+        font-family: Magistral;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: normal;}
+    .text__about{
+        margin-top: 35px;
+    }
+.header__container{
+    padding-left: 80px;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header__container a{ color: white;}
+@media (max-width:930px) {
+    .quem-somos{margin-top: 8rem;}
+    .container__texts{width: 85%; padding-bottom: 50px;}
+    .titles_about{text-align: center;}
+}
