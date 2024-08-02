@@ -1486,7 +1486,7 @@ select option{
     margin-top: -5px;
     z-index: 0;
     position: relative;
-    width: 125%;
+    width: 115%;
     max-width: 1920px;
     height: 506px;
     background-image: url(../static/image/footer.png);

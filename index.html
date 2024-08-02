@@ -140,9 +140,12 @@
                                             <input type="text" name="conta" id="conta" placeholder="Valor de sua conta de luz">
                                         </div>
                                         <div class="result__camp">
-                                            <div class="infos first"><h3>Irradiação considerada</h3><p>5,149 kW/m² x dia</p></div>
-                                            <div class="infos"><h3>Irradiação considerada</h3><p>5,149 kW/m² x dia</p></div>
-                                            <div class="infos"><h3>Irradiação considerada</h3><p>5,149 kW/m² x dia</p></div>
+
+                                            
+                                            <div class="infos first"><h3>Irradiação considerada</h3><p><span id="irrad">0</span> kW/m² x dia</p></div>
+                                            <div class="infos"><h3>Tarifa considerada</h3><p><span id="tarifa">0</span> R$ / kWh</p></div>
+                                            <div class="infos"><h3>Potência kW pico</h3><p><span id="potencia">0</span> kW pico</p></div>
+
                                             <div class="valor_final"><h3>Valor estimado</h3><h3 id="resultado">0</h3></div>
                                         </div>
                                         <div class="garantias">
@@ -446,6 +449,10 @@
             const estado = document.getElementById('estado').value;
             const valorConta = parseFloat(document.getElementById('conta').value);
 
+            const taxaIrrad = document.getElementById('irrad');
+            const tarifa = document.getElementById('tarifa');
+            const potencia = document.getElementById('potencia');
+
             const resultadoElement = document.getElementById('resultado');
 
             if (estado && !isNaN(valorConta) && valorConta > 0) {
@@ -459,6 +466,11 @@
                     const custoProjeto = potenciaWp * dados.custoWp;
 
                     const custoFormatado = custoProjeto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+                    taxaIrrad.textContent = dados.irrad;
+                    tarifa.textContent = dados.tarifa;
+                    potencia.textContent = dados.custoWp;
+
                     resultadoElement.textContent = custoFormatado;
                 } else {
                     resultadoElement.textContent = 'Dados do estado não encontrados.';
