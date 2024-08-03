@@ -756,7 +756,7 @@ select option{
     .infraestrutura__2{margin-top: 2%;}
     .s-infraestrutura {height: 230vh;}}
 @media (max-width: 630px) {
-    .infraestrutura__2{height: 100%; width: 100%; margin-top: 2%;}
+    .infraestrutura__2{height: 100%; width: 100%; margin-top: 40%;}
 .s-infraestrutura {height: 225vh;}}
 .infraestrutura__2 h1{
     margin: 0 auto;
