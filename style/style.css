@@ -14,7 +14,6 @@
 }
 
 *{
-
     padding: 0
 }
 
@@ -56,9 +55,9 @@ p, h1, h2, h3,h4, a{
 }
 
 body{
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
     font-family: "magistral", sans-serif;
     font-style: normal;
     margin: 0 auto;
@@ -104,7 +103,9 @@ header h1{
     width: 90%;
     max-width: 587px;
 }
-
+main{
+    overflow-x: hidden;
+}
 .span__header{
     font-weight: 700;
 }
@@ -1481,17 +1482,22 @@ select option{
 }
 
 .s-map{
-    background-position: center;
+   
+    background-position: left center;
     margin: 0 auto;
     margin-top: -5px;
     z-index: 0;
     position: relative;
-    width: 115%;
+    width: 100%;
     max-width: 1920px;
     height: 506px;
     background-image: url(../static/image/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 600px) {
+    .s-map{ background-position-x: -114px;}
 }
 
 footer{
