@@ -1497,7 +1497,7 @@ select option{
 }
 
 @media (max-width: 600px) {
-    .s-map{ background-position-x: -114px;}
+    .s-map{ background-position-x: -254px;}
 }
 
 footer{
@@ -1554,12 +1554,14 @@ footer{
     align-items: center;}
 .footer-rodape img{ margin-left: 22px;}
 .creditos-footer :nth-child(1), .creditos-footer p{font-size: 13px;}
-.creditos-footer :nth-child(2){color: #444;}
+.creditos-footer :nth-child(2){color: #444; transition: ease-in-out 1s;}
+.creditos-footer :nth-child(2):hover{transition: ease-in-out 0.3s; color: #00f0c8;}
 .creditos-footer{
     margin:0 auto;
     width: 80%;
     max-width: 950px;
     padding: 15px 0 75px 0;}
+.redes_sociais{display:flex; gap: 15px;}
 @media(max-width: 600px){
     .footer-infos{flex-direction: column;row-gap: 95px;}
 }
