@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: 'muller';
-    src: url('../static/font/MullerRegular.ttf');
+    src: url('../static/font/Mulish-Regular.ttf');
     font-weight: 300; 
     font-style: normal; 
 }
 @font-face {
     font-family: 'muller';
-    src: url('../static/font/MullerExtraBoldItalic.ttf');
+    src: url('../static/font/Mulish-BoldItalic.ttf');
     font-weight: 500; 
     font-style: extra-bold; 
 }
